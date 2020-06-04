@@ -6,6 +6,7 @@ There are a couple of things here, first the code that runs on the Raspberry Pi 
 api.py - this is the api that controls the motors on ATV it self. It is called from the C# application on the streaming desktop.
 rpi_camera.py - this is a simple bit of code I found that converts the pi camera feed into an MPEG stream and a web page. 
 
+Both of those get run on pi startup. The web page for the camera I frame in a source in OBS for the camera.
 
 Then the C# program is the rest of the files. This is the vote tally, twitch chat app that runs on my stream PC. Watches chat for votes, tally's the votes every 15 seconds and then calls the above API to tell the robot to move.
 
