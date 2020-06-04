@@ -3,7 +3,7 @@ The source code for my Raspberry Pi twitch controlled robot
 
 There are a couple of things here, first the code that runs on the Raspberry Pi 4.
 
-api.py - this is the api that controls the motors on ATV it self. It is called from the C# application on the streaming desktop.
+api.py - this is the api that controls the motors on the ATV itself. It is called from the C# application on the streaming desktop.
 rpi_camera.py - this is a simple bit of code I found that converts the pi camera feed into an MPEG stream and a web page. 
 
 Both of those get run on pi startup. The web page for the camera I frame in a source in OBS for the camera.
