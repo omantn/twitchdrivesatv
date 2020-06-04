@@ -8,3 +8,5 @@ rpi_camera.py - this is a simple bit of code I found that converts the pi camera
 
 
 Then the C# program is the rest of the files. This is the vote tally, twitch chat app that runs on my stream PC. Watches chat for votes, tally's the votes every 15 seconds and then calls the above API to tell the robot to move.
+
+Please don't assume any of this is code I would run in a real production environment. It works, it's not sexy, it doesn't handle errors super gracefully. It was just a fun project. Feel free to send hate anyway though! Or better yet, any ideas for improving it.
