@@ -109,7 +109,7 @@ def api_backward():
 
         return "Backward at speed " + str(speed) + " duration " + str(duration)
     except Exception as ex:
-        return "forward failed: " + str(ex)
+        return "backward failed: " + str(ex)
 
 @app.route('/api/left', methods=['GET'])
 def api_left():
@@ -133,7 +133,7 @@ def api_left():
 
         return "Left at speed "+ str(speed) + " duration " + str(duration)
     except Exception as ex:
-        return "forward failed: " + str(ex)
+        return "left failed: " + str(ex)
 
 @app.route('/api/right', methods=['GET'])
 def api_right():
@@ -157,7 +157,7 @@ def api_right():
         
         return "Right at speed " + str(speed) + " duration " + str(duration)
     except Exception as ex:
-        return "forward failed: " + str(ex)
+        return "right failed: " + str(ex)
 
 # it took me a moment to find the host= bit. This is pretty typical of models like this
 # this being python flask or node.js and others to default to only listening for connections
